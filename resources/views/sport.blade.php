@@ -13,6 +13,7 @@
             <div>
                 <span>{{$item['teams'][0]}}</span>
                 <span class="ml-4">{{$item['teams'][1]}}</span>
+                <span class="ml-4">{{date('Y-m-d h:i:s', $item['commence_time'])}}</span>
             </div>
         </a>
         

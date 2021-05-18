@@ -31,7 +31,10 @@ class SportsController extends Controller
         $sport = Http::get($this->endpoint.'/v3/odds/?apiKey='. $this->api_key.'&sport='.$key.'&region=eu')
             ->json()['data'];
 
-        //  dd($sport[0]);
+        // $time =  date('Y-m-d h:i:s', 1621690200);
+        // $time = date('Y-m-d h:i:s', floor(1621690200));
+
+        // dd($sport[0]);
 
         return view('sport', [
             'sports' => $sports,
